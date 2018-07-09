@@ -1,0 +1,24 @@
+header{
+	padding: 1rem 0;
+	h1{
+		margin: 0;
+	}
+	background: blue;
+}
+nav{
+	ul{
+		padding: 0;
+		margin: 0;
+		list-style: none;
+		text-align: center;
+		li{
+			display: inline-block;
+			margin: 0 1rem;
+		}
+	}
+}
+.header{
+	&__cart{
+		text-align: right;
+	}
+}

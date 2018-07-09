@@ -1,0 +1,111 @@
+// ============================================
+// FONT VARIABLE
+// ============================================
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans:400,700|Noto+Sans:400,400i');
+
+$f-primary: 'Josefin Sans', sans-serif;
+$f-secondary: 'Noto Sans', sans-serif;
+
+// ===========================================
+// COLOR VARIABLE
+// ===========================================
+
+$c-primary: #FFD8C0;
+$c-secondary: #F72361;
+$c-tertiary: #1F1E62;
+$c-quaternary: #24B8F8;
+$c-black: #444;
+$c-white: #FFFCF9;
+
+// ===========================================
+// SUSY VARIABLE
+// ===========================================
+
+$susy-settings: (
+  xs: (
+    'max-width': 575px,
+    'total-column': 4,
+    'columns': susy-repeat(4),
+    'container-spread': 'wide',
+    'gutters': 30px
+  ),
+
+  s: (
+    'min-width': 576px,
+    'total-column': 4,
+    'columns': susy-repeat(4),
+    'container-spread': 'wide',
+    'gutters': 30px
+  ),
+
+  m: (
+    'min-width': 768px,
+    'total-column': 8,
+    'columns': susy-repeat(8),
+    'container-spread': 'wide',
+    'gutters': 30px
+  ),
+
+  l: (
+    'min-width': 992px,
+    'total-column': 12,
+    'columns': susy-repeat(12),
+    'container-spread': 'wide',
+    'gutters': 30px
+  ),
+
+  xl: (
+    'min-width': 1200px,
+    'total-column': 12,
+    'columns': susy-repeat(12),
+    'container-spread': 'wide',
+    'gutters': 30px
+  ),
+
+  xxl: (
+    'min-width': 1800px,
+    'total-column': 12,
+    'columns': susy-repeat(12),
+    'container-spread': 'wide',
+    'gutters': 30px
+  )
+);
+
+
+// ===========================================
+// BREAKPOINT VARIABLE
+// ===========================================
+
+$breakpoints: (
+	s: 576,
+	m: 768,
+	l: 992,
+	xl: 1200,
+  xxl: 1800
+);
+
+// ===========================================
+// CONTAINER WIDTH VARIABLE
+// ===========================================
+
+$containers: (
+	s: 540px,
+	m: 720px,
+	l: 960px,
+	xl: 1140px,
+  xxl: 1440px,
+);
+
+// ===========================================
+// RTL / LRT SUPPORT
+// ===========================================
+
+$grid-alignment: left;
+$grid-alignment-rev: right;
+
+// ===========================================
+// GRID TYPE
+// Value can be float or flexbox
+// ===========================================
+
+$grid-type: float !default;

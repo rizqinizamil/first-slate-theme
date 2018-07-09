@@ -1,0 +1,60 @@
+/*
+@include ms-var();
+
+h1{
+	@extend .ms5;
+}
+h2{
+	@extend .ms4;
+}
+h3{
+	@extend .ms3;
+}
+h4{
+	@extend .ms2;
+}
+h5{
+	@extend .ms1;
+}
+h6{
+	@extend .ms0;
+}
+p, ul, ol{
+	@extend .ms0;
+}
+*/
+
+h1{
+	@include sgl-heading(5);
+}
+h2{
+	@include sgl-heading(4);
+}
+h3{
+	@include sgl-heading(3);
+	// I changed the mixins on SassyGridLover;
+}
+h4{
+	@include sgl-heading(2);
+}
+h5{
+	@include sgl-heading(1);
+}
+h6{
+	@include sgl-heading(0);
+}
+p, ul, ol, pre{
+	@include sgl-heading(0);
+}
+
+a{
+	text-decoration: none;
+	&:hover{
+		text-decoration: none;
+	}
+}
+
+// html, body, or parent element
+.good-type{
+	@include root-fs();
+}
